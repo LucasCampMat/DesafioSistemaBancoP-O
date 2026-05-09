@@ -1,50 +1,66 @@
 package org.example;
 
-import java.util.Scanner;
+import java.time.LocalDate;
 
 public class ContaBancaria {
 
 
-    private int numeroDaConta = 0;
-    private String titular;
+    private String numeroDaConta = "";
+    private String agencia = "";
+    private Titular titular;
+    private String status = "";
+    private String senha = "";
+
     private double saldo = 0.00;
-    private double deposita = 0.00;
-    private double saca = 0.00;
 
+    private LocalDate dataAbertura = null;
 
-    public void depositar(){
-        if(this.deposita >= 10){
-            System.out.println("Depositado com sucesso.");
-        } else {
-            System.out.println("O valor mínimo permitido para depósito neste terminal é de 10 reais.");
-        }
-
-    }
-
-    public void sacar(){
-        if(this.saca >= 10){
-            System.out.println("Sacado com sucesso.");
-        } else System.out.println("O valor mínimo para saque é de 10 reais.");{
-
-        }
-    }
-
-
-    public int getNumeroDaConta() {
-        return numeroDaConta;
-    }
-
-    public void setNumeroDaConta() {
-
-        this.numeroDaConta = numeroDaConta;
-    }
-
-    public String getTitular() {
+    public Titular getTitular() {
         return titular;
     }
 
-    public void setTitular() {
+    public void setTitular(Titular titular) {
         this.titular = titular;
+    }
+
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public LocalDate getDataAbertura() {
+        return dataAbertura;
+    }
+
+    public void setDataAbertura(LocalDate dataAbertura) {
+        this.dataAbertura = dataAbertura;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getNumeroDaConta() {
+        return numeroDaConta;
+    }
+
+    public void setNumeroDaConta(String numeroDaConta) {
+        this.numeroDaConta = numeroDaConta;
     }
 
     public double getSaldo() {
