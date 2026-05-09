@@ -1,4 +1,4 @@
-# Desafio Sistema Banco P-O
+# Desafio Sistema Banco POO
 
 Este repositório contém a implementação de um sistema de conta bancária desenvolvido em Java, aplicando os pilares da Programação Orientada a Objetos (POO), como encapsulamento e associação de classes.
 
