@@ -12,7 +12,7 @@ Este repositório contém a implementação de um sistema de conta bancária des
 
 O projeto foi estruturado com base no seguinte diagrama de classes UML:
 
-![Diagrama de Classes UML](doc)
+![Diagrama de Classes UML](Diagramas)
 
 > _Nota: O arquivo original editável do Draw.io encontra-se armazenado na pasta `Diagramas/` do projeto._
 
