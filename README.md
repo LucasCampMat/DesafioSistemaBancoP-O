@@ -29,5 +29,5 @@ O projeto foi estruturado com base no seguinte diagrama de classes UML:
    ```bash
    git clone https://github.com/LucasCampMat/DesafioSistemaBancoP-O.git
    ```
-3. Abra o projeto no **IntelliJ IDEA**.
+3. Abra o projeto no **IntelliJ IDEA ou na IDEA de sua preferência**.
 4. Execute a classe `Main` localizada em `src/main/java/org/example/Main.java`.
