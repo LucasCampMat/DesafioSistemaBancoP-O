@@ -80,7 +80,7 @@ public class ContaBancaria {
 
     //-------------------------STATUS DA CONTA--------------------------//
 
-    public void ativar() {
+    public void criarContaBancaria() preciso criar esse método{
         System.out.println("Conta bancaria ativada com sucesso.");
         this.status = "Conta ativa.";
     }
