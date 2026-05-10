@@ -9,6 +9,12 @@ public class Titular {
     private String telefoneTitular = "";
     private String emailTitular = "";
 
+    public Titular(String cpfTitular, String idTitular, String nomeTitular) {
+        this.cpfTitular = cpfTitular;
+        this.idTitular = idTitular;
+        this.nomeTitular = nomeTitular;
+    }
+
     public void atualizarCadastro(String novoTelefone, String novoEmail, String novoEndereco) {
         this.telefoneTitular = novoTelefone;
         this.emailTitular = novoEmail;

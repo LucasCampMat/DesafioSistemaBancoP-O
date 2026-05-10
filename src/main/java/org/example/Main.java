@@ -5,7 +5,7 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Digite o nome do títular: ");
         String nomeTitular = in.nextLine();
         System.out.println("Digite o numero da conta: ");
-        int numeroDaConta = in.nextInt();
+        String numeroDaConta = in.nextLine();
 
         System.out.println("Digite o número para a transação desejada: \n(1) Depositar\n(2) Sacar\n(3) Ver saldo");
         int escolha = in.nextInt();
