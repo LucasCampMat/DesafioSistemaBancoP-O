@@ -1,4 +1,4 @@
-package org.contabancaria;
+package org.contabancaria.infra;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

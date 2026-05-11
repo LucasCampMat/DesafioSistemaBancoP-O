@@ -1,4 +1,4 @@
-package org.contabancaria;
+package org.contabancaria.model;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
