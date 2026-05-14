@@ -1,4 +1,4 @@
-package org.example;
+package org.contabancaria.model;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -51,7 +51,7 @@ public class ContaBancaria {
     public boolean sacar(double valor) {
         if (valor > 0.00 && this.saldo >= valor) {
             saldo -= valor;
-            this.extratoBancario.add("Saque de R$ " + String.format("%.2f", valor) + "Efetuado com sucesso:");
+            this.extratoBancario.add("Saque de R$ " + String.format("%.2f", valor) + " Efetuado com sucesso:");
             return true;
         }
         System.out.println("Saldo insuficiente.");
@@ -70,7 +70,7 @@ public class ContaBancaria {
         extrato.append("Conta aberta em: ").append(this.dataAbertura.format(formatter)).append("\n");
         extrato.append("---------------------------------------\n");
 
-        for(String transacao : extratoBancario) {
+        for (String transacao : extratoBancario) {
             extrato.append(transacao).append("\n");
         }
         extrato.append("---------------------------------------\n");
@@ -80,9 +80,9 @@ public class ContaBancaria {
 
     //-------------------------STATUS DA CONTA--------------------------//
 
-    public void ativar() {
-        System.out.println("Conta bancaria ativada com sucesso.");
+    public void criarContaBancaria() {
         this.status = "Conta ativa.";
+        System.out.println("Conta bancária criada com sucesso.");
     }
 
     public void bloquearConta() {
@@ -99,16 +99,17 @@ public class ContaBancaria {
     }
 
     public boolean solocitarEncerramento() {
-        if (getSaldo() != 0.00) {
+        if (getSaldo() == 0.00) {
             System.out.println("Conta encerrada com sucesso.");
             this.status = "Conta encerrada.";
             return true;
         } else if (getSaldo() < 0.00) {
             System.out.println("Para encerrar sua conta, é necessário deixar seus débitos em dia, fale com seu gerente.");
             return false;
+        } else {
+            System.out.println("Seu saldo deve ser zero para poder encerrar a conta.");
+            return false;
         }
-        System.out.println("Seu saldo deve ser zero para poder encerrar a conta.");
-        return false;
     }
 
     /// ----------------------------Getter and Setters------------------------///
